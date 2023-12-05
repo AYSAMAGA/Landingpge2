@@ -1,0 +1,915 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    min-height: 123px;
+    position: fixed;
+    border-bottom: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+
+} 
+
+
+#logo {
+    display: flex;
+
+}
+
+.section-one {
+    width: 100%;
+    height: 100vh;
+    background-image: url(/IMG/img/fotoprincipal.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+
+}
+
+    .right-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .sesiones {
+        display: flex;
+    }
+
+    #inicio {
+        color: #7E7E7E;
+        font-family: Brandon Grotesque;
+        font-size: 20px;
+        font-style: normal;
+        text-decoration: none;
+    }
+
+    #registro {
+    color: #FFF;
+    font-family: Brandon Grotesque;
+    font-size: 20px;
+    font-style: normal;
+    text-decoration: none;
+    }
+
+    .language {
+    margin: 0 40px; 
+    }
+
+        .language a {
+        margin: 0 10px;
+        }
+
+    #spanish {
+    color: #7E7E7E;
+    font-family: Brandon Grotesque;
+    font-size: 20px;
+    font-style: normal;
+    text-decoration: none;
+    }
+
+    #english {
+    color: #FFF;
+    font-family: Brandon Grotesque;
+    font-size: 20px;
+    font-style: normal;
+    text-decoration: none;
+    }
+
+
+    .divider {
+    border-left: 1px solid white;
+    margin: 0 20px;
+    }
+
+
+    .menu {
+    width: 100%;
+    height: 100%;
+    padding: 0 40px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    }
+
+    .icon-menu {
+    padding: 10px 0 10px 20px;
+    border-left: 1px solid white;
+    color: #FFF;
+    width: 45px;
+    height: 30px;
+    }
+
+    .search-container {
+    width: 250px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    align-self: flex-end;
+    margin: 150px;
+    }
+
+    #search-input {
+    background-color: transparent;
+    border: none;
+    color: white;
+    }
+
+    ::placeholder {
+    color: white;
+    opacity: 1;
+       }
+
+.section-one-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.4);
+
+}
+
+#button-section-one {
+    display: flex;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px;
+    width: 250px;
+    height: 40px;
+    justify-content: space-around;
+    background-color: transparent;
+    align-items: center;
+    color: #FFF;
+    font-family: Brandon Grotesque;
+    font-size: 15px;
+    font-style: normal;
+}
+
+.section-one-titulo {
+    margin-bottom: 100px;
+}
+
+
+.socialmedia {
+    width: 20px;
+    height: 100vh;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+    align-items: center;
+}
+
+.icon-sm {
+    margin-top: 15px;
+
+}
+
+#follow-span {
+    transform: rotate(90deg);
+    color: #B4B7B7;
+    font-family: PF Regal Display Pro;
+    font-size: 20px;
+    font-style: normal;
+}
+
+#line-follow {
+    margin-top: 50px;
+    height: 50px;
+    border-left: 1px solid white;
+    color: #7E7E7E;
+}
+
+#subtitle {
+    color: #B4B7B7;
+    font-family: PF Regal Display Pro;
+    font-size: 20px;
+    font-style: normal
+}
+
+#title {
+    color: #FFF;
+    font-family: PF Regal Display Pro;
+    font-size: 30px;
+    font-style: normal
+}
+
+#sales-home {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin: 5% 0;
+
+}
+
+
+#properties-for-sale-content-home {
+    margin-bottom: 2%;
+}
+
+
+#properties-for-sale-content-home.grind-content-home {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    #gallery-property-for-sale {
+        display: flex;
+        overflow: hidden;
+        width: 50%;
+        height: 384px;
+    }
+
+
+    #real-sale-desc-home {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-left: 50px;
+
+    }
+
+    .image-box{
+        height:100%;
+        width:15vw;
+        display: inline;
+        text-decoration: none;
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    #picture-england {
+        background-image: url(/IMG/img/England.png);
+    }
+
+    #principal-england, #principal-france, #principal-canada {
+        font-size: 18px;
+        font-family: "PF Regal Display Pro";
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+       ;
+    }
+
+    #secundary-england, #secundary-france, #secundary-canada {
+        max-width: 1600px;
+        font-size: 22px;
+        font-family: "PF Regal Display Pro";
+        font-style: normal;
+        font-weight: 500;
+        
+    }
+
+
+    #picture-france {
+        background-image: url(/IMG/img/Marselles.png);
+    }
+
+    #picture-scott {
+        background-image: url(/IMG/img/scott.png);
+    }
+
+    .worldwide-labele {
+        font-size: 20px;
+        color: #DF991B;
+        font-family: PF Regal Display Pro;
+        font-style: normal;
+        text-align: right;
+    }
+
+    .property-type-label {
+        font-size: 35px;
+        color: #000;
+        text-align: right;
+        font-family: PF Regal Display Pro;
+        font-style: normal;
+    }
+
+    .buttons-sale-home {
+        display: flex;
+        flex: row;
+        margin-top: auto;
+    }
+
+    .button-prev {
+        margin-right: auto;
+        color: #B4B7B7;
+        font-family: Brandon Grotesque;
+        cursor: pointer;
+        font-size: 18px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: unset;
+        background-color: unset;
+    }
+
+    .button-all-properties {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid black;
+        border-radius: 100px;
+        padding: 0 20px;
+        background-color: transparent;
+        align-items: center;
+        color: #000;
+        text-align: center;
+        font-family: Brandon Grotesque;
+    }
+
+    .button-next {
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: #DF991B;
+        font-family: Brandon Grotesque;
+        cursor: pointer;
+        font-size: 18px;
+        align-items: center;
+        border: unset;
+        background-color: unset;
+    }
+
+
+    .container-one {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        margin: 2px ;
+        padding: 2px;
+    }
+
+
+    .container-two {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        color: #FFF;
+        font-family: PF Regal Display Pro;
+  
+    }
+
+    .container-two:hover{
+            background-color: #FFFFFF !important;
+            color: #000000;
+        }
+
+    .container-two:hover > span.Title::before{
+            content: url(https://uniqluxury.com.mx/wp-content/uploads/2022/08/castHov60per.svg);
+            margin-right: 10px;
+        }
+    
+    svg {
+        height: 20px;
+    }
+    
+
+
+#properties-for-rent-content-home {
+    margin-bottom: 2%;
+
+}
+
+#properties-for-rent-content-home.grind-content-rent-home {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+    }
+
+
+    #gallery-property-for-rent {
+        display: flex;
+        overflow: hidden;
+        align-content: flex-end;
+        width: 50vw;
+        height: 384px;
+      
+    }
+
+    #real-rent-desc-home {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        margin-left: 50px;
+    }
+
+    #picture-rent1 {
+        background-image: url(/IMG/img/rent1.jpg);
+    }
+
+    #picture-rent2 {
+        background-image: url(/IMG/img/rent2.png);
+    }
+
+    #picture-rent3 {
+        background-image: url(/IMG/img/rent3.jpg);
+        
+    }
+
+    #principal-rent1, #principal-rent2, #principal-rent3 {
+        font-size: 18px;
+        font-family: "PF Regal Display Pro";
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+       ;
+    }
+
+    #ssecundary-rent1, #secundary-rent2, #secundary-rent3 {
+        max-width: 1600px;
+        font-size: 22px;
+        font-family: "PF Regal Display Pro";
+        font-style: normal;
+        font-weight: 500;
+        
+    }
+
+
+    .worldwide-rent-labele {
+        text-align: left;
+        font-size: 20px;
+        color: #DF991B;
+        font-family: PF Regal Display Pro;
+        font-style: normal;
+    }
+
+    .property-rent-label {
+        font-size: 35px;
+        color: #000;
+        text-align: left;
+        font-family: PF Regal Display Pro;
+        font-style: normal;
+    }
+
+    .content-p-rent {
+        font-size: 20px;
+        line-height: 30px;
+        font-family: brandon-grotesque;
+        font-style: normal;
+        margin-bottom: 20%;
+        text-align: justify;
+
+    }
+
+    .buttons-rent-home {
+        display: flex;
+        flex: row;
+        margin-top: auto;
+        justify-content: space-between;
+    }
+
+    .button-prev {
+        margin-right: auto;
+        color: #B4B7B7;
+        font-family: Brandon Grotesque;
+        cursor: pointer;
+        font-size: 18px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: unset;
+        background-color: unset;
+    }
+
+    .button-all-properties {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid black;
+        border-radius: 100px;
+        padding: 0 20px;
+        background-color: transparent;
+        align-items: center;
+        color: #000;
+        text-align: center;
+        font-family: Brandon Grotesque;
+    }
+
+    .button-next {
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: #DF991B;
+        font-family: Brandon Grotesque;
+        cursor: pointer;
+        font-size: 18px;
+        align-items: center;
+        border: unset;
+        background-color: unset;
+    }
+    
+
+.development{
+    margin-bottom: 5%;
+    display: grid;
+}
+
+    .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 0 5% 0 5%;
+    column-gap: 25px;
+    row-gap: 25px;
+    }
+  
+        .grid-container > div {
+        background-color: rgba(255, 255, 255, 0.8);
+        border: 1px solid black;
+        font-size: 30px;
+        
+        }
+
+    .img-content-dev{
+        height: 12vw;
+    }
+
+    .img-content-dev img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .dev-info-box span{
+        display: block;
+    }
+    .dev-img-box{
+        text-decoration: none;
+    }
+
+    .dev-info-box{
+        margin: auto;
+        padding:10px ;
+        
+    }
+    .prop-re-dev-name{
+        color: #464547;
+        font-family: PF Regal Display Pro;
+        font-size: 0.9vw;
+    }
+    .prop-re-dev-city{
+        color: #000;
+        font-family: PF Regal Display Pro;
+        font-size: 1.3vw;
+    }
+
+
+
+    #dev-subtitle{
+        color: #DF991B;
+        text-align: center;
+        font-family: PF Regal Display Pro;
+        font-size: 26px;
+    }
+
+    #dev-title{
+        color   : #000000;
+        text-align: center;
+        font-family: PF Regal Display Pro;
+        font-size: 42px;
+
+    }
+
+
+
+
+#news{
+    
+    display: flex;
+    height: 100vh;
+    max-width: 1200px;
+    width: 100%;
+    justify-content: center;
+    margin: 0 5% 8% 5%;
+
+
+}
+.news-left{
+    position: relative;
+    width: 50%;
+    
+    
+}
+
+.backbox{
+    width: 40vh;
+    height: 80vh;
+    background-color:#26282B;
+    position: absolute;
+}
+
+    .new-image{
+        width: 65vh;
+        height: 65vh;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+
+        }
+
+    .news-right{
+        width: 50%;
+    }        
+    #icononews{
+        text-align: left;
+    }
+
+    #liner-right-header-footer{
+        border-bottom: #DF991B;
+        text-align: left;
+    }
+    
+    .services-news{
+        text-align: right;
+        font-size: 20px;
+        color: #DF991B;
+        font-family: PF Regal Display Pro;
+        font-style: normal;
+    }
+    .art-curation-news {
+        font-size: 35px;
+        text-align: right;
+        font-family: PF Regal Display Pro;
+        font-style: normal;
+    }
+    .info-news{
+        font-size: 20px;
+        color: #000;
+        font-family: brandon-grotesque;
+        font-style: normal;
+        text-align: right;
+    }
+
+    .buttons-news{
+        display: flex;
+        flex: row;
+        margin-top: 100px;
+    }
+
+    .button-prev {
+        margin-right: auto;
+        color: #B4B7B7;
+        font-family: Brandon Grotesque;
+        cursor: pointer;
+        font-size: 18px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border: unset;
+        background-color: unset;
+    }
+
+    .button-all-properties {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border: 1px solid black;
+        border-radius: 100px;
+        padding: 0 20px;
+        background-color: transparent;
+        align-items: center;
+        color: #000;
+        text-align: center;
+        font-family: Brandon Grotesque;
+    }
+
+    .button-next {
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        color: #DF991B;
+        font-family: Brandon Grotesque;
+        cursor: pointer;
+        font-size: 18px;
+        align-items: center;
+        border: unset;
+        background-color: unset;
+    }
+
+        #piePagina{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto 1fr;
+        }
+        #footerSeccion1{
+            background: #26282B;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            column-gap: 15px;
+            align-items: center;
+            justify-content: center;
+            margin: 0 5%;
+            padding: 2% 5%;
+            grid-row: 1/3;
+            grid-column: 1/3;
+            z-index: 999;
+            grid-template-rows: auto 1fr;
+        }
+        #titulofooter1{
+            font-size: 30px;
+            line-height: 32px;
+            grid-column: 1/2;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 45px;
+            color: #DF991B;
+            padding-top: 15px;
+        }
+        
+        #titulofooter2{
+            font-size: 40px;
+            line-height: 40px;
+            grid-column: 1/2;
+            font-style: normal;
+            font-weight: 100;
+            font-size: 45px;
+            color: #FFFFFF;
+            align-self: start;
+        }
+        #miniForm{
+            grid-row: 1/3;
+            grid-column: 2/3;
+            padding: 5px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        #nombreForm{
+            padding-bottom: 15px;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: baseline;
+            column-gap: 15px;
+        }
+        #nombreForm label{
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.1rem;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            color: #fff;
+            font-family: 'brandon-grotesque', sans-serif;
+            line-height: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        #nombreForm input{
+            border-radius: 100px;
+            border: 1px solid #DF991B;
+            padding-top: 0;
+            padding-bottom: 2px;
+            font-size: 16px;
+            color: #fff;
+            padding-left: 25px;
+            background-color: transparent !important;
+            height: 55px !important;
+        }
+        #emailform{
+            padding-bottom: 15px;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            align-items: baseline;
+            column-gap: 15px;
+        }
+        #emailform label{
+            font-size: 14px;
+            font-weight: 400;
+            letter-spacing: 0.1rem;
+            text-transform: uppercase;
+            margin-bottom: 0;
+            color: #fff;
+            font-family: 'brandon-grotesque', sans-serif;
+            line-height: 20px;
+            margin: 0;
+            padding: 0;
+        }
+        #emailform input{
+            border-radius: 100px;
+            border: 1px solid #DF991B;
+            padding-top: 0;
+            padding-bottom: 2px;
+            font-size: 16px;
+            color: #fff;
+            padding-left: 25px;
+            background-color: transparent !important;
+            height: 55px !important;
+        }
+        #botonregistro{
+            display: flex;
+            justify-content: end;
+        }
+        #botonregistro input{
+            background-color: unset;
+            color: #DF991B;
+            padding: 5px 30px;
+            border-radius: 100px !important;
+            letter-spacing: 3px;
+            border: 1px solid #DF991B;
+            font-size: 17px;
+            font-family: 'brandon-grotesque';
+            font-weight: 390;
+            margin-top: 0.6vw;
+            height: 55px !important;
+        }
+        #footerSeccion2{
+            padding: 15% 0 0 0;
+            grid-row: 2/5;
+            grid-column: 1/3;
+            background: #000000;
+        }
+        #infofooter{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+        }
+        .infofooter1 a img{
+            margin-left: 15%
+        }
+        .infofooter1 span a{
+            display: flex;
+            align-items: center;
+            text-align: start;
+            font-size: 20px;
+            color: #FFFFFF;
+            text-decoration: none;
+            margin-left: 15%
+        }
+        .infofooter2 span a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: start;
+            font-size: 20px;
+            color: #FFFFFF;
+            text-decoration: none;
+            
+        }
+        
+        .infofooter3 span a{
+            display: flex;
+            align-items: center;
+            text-align: start;
+            font-size: 20px;
+            color: #FFFFFF;
+            text-decoration: none;
+            margin-right: 16%;
+            justify-content:end;
+        }
+        .infofooter4 span a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: start;
+            font-size: 20px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+        
+        #copyright{
+            font-style: normal;
+            font-weight: 100;
+            font-size: 15px;
+            line-height: 45px;
+            text-align: center;
+            color: #FFF;
+            margin: 1% 5%;
+            border-top: 1px solid white;
+            padding-top: 1%;
+            background: #000000;
+        }
+    
+
+
+
+   
