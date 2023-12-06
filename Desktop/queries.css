@@ -1,93 +1,98 @@
 
+/*  Header & Seccion one*/
+
+@media only screen and (max-width: 767px) {
+    .logo-desktop {
+        display: none;
+    }
+    .logo-mobile {
+        display: block;
+    }
+}
+/*  Vamos a mostrar un logo diferente en mobile */
+
+.logo-desktop,
+.logo-mobile {
+    width: 100%; /* Ajusta el ancho según tus necesidades */
+    max-width: 100%;
+    height: auto;   }
+
+@media only screen and (min-width: 768px) {
+        .logo-desktop {
+            display: block;
+        }
+        .logo-mobile {
+            display: none;
+        }
+    }
+
+@media only screen and (max-width: 767px) {
+        .logo-desktop {
+            display: none;
+        }
+        .logo-mobile {
+            display: block;
+        }
+    }
 
 
+/*  La cabecera se elimina y solo queda en ícono de menú*/
 
-@media (max-width:320px){  
-
-/*Mostrar diferente logo en Mobile */
-
-
-
-#logomobile {
-    display: block;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-
+@media only screen and (max-width: 767px) {
+    #cabecera {
+        display: none; /* Oculta la cabecera en dispositivos móviles */
+    }
+    .menu-icon {
+        display: block; /* Muestra el ícono de menú en dispositivos móviles */
+    }
+   
 }
 
-#logodesktop {
-    display: none;
+/*  El search container se centra en la mmitad de la pantalla mobile*/
 
-}
+/*  El títlo, subtitulo y properties buttons se centran en la mitad de la pantalla mobile  */
 
-/*Quitar elementos de mobile */
-
+/*  Si estas en mobile se añade tres líneas en la parte inferior  */
 
 
-.right-header{
-    display: none;
-}    
+/*  Seccion Sales Home*/
 
-.divider{
-    display: none
-}
-
-.socialmedia{
-    display: none ;
-}
+/*  Worlwide & Properties for sale salen primero y se centran a la izquierda en la pantalla mobile*/
 
 
+/*  En mobile , aparece un párrafo alineado a la izquierda */
+
+/*  En mobile , en la parte superior derecha del párrafo nuevo aparece la fecha  next */
+
+/*  View all properties tiene otro estilo y está a lado izquierdo */
+
+/*  Solo se muestran dos fotos*/
 
 
-.menu{
-    display: block;
-
-}
-
-/*Buscador en el centro*/
-.search-container {
-    width: 380px;
-    height: 60px;
-    border: 1px solid white;
-    border-radius: 100px;
-    display: flex;
-    align-items: center;
-    padding: 100px,50px;
-    margin: 100px;   
-}
-
-/*Texto del header centrado en toda la pantalla*/
+/*  Seccion Rent Home*/
 
 
-.section-one-container{
+/*  Worlwide & Properties for rent salen primero y se centran a la izquierda en la pantalla mobile*/
 
-}
+/*  En mobile , en la parte superior derecha del párrafo nuevo aparece la fecha  next */
 
-.section-one-titulo{
-display: flex;
-flex-direction: column;
-justify-content: center;
-}
+/*  View all properties tiene otro estilo y está a lado izquierdo */
 
-#subtitle{
-width: 380px;
-height: 41px;
-}
-
-#title{
-width: 380px;
-height: 63px;
-}
+/*  Solo se muestran dos fotos*/
 
 
-#button-section-one {
-width: 428px;
-height: 926px;
-}
+/*  Seccion development*/
 
-}
+/*  aparecen 3 fotos diferentes a las de development desktop */
 
+/*  Aparece una mini secttion  name property y location  con un foto 
 
 
+/*  Seccion news*/
+
+/*  El logo sale a lado izquierdo y bajo el logo la línea*/
+
+/* Art Curation & content news  salen primero y se centran a la izquierda en la pantalla mobile*/
+
+/*  En mobile , en la parte superior derecha del párrafo nuevo aparece la fecha  next */
 
