@@ -1,3 +1,5 @@
+/* General*/
+
 * {
     padding: 0;
     margin: 0;
@@ -16,11 +18,16 @@ header {
 
 } 
 
+#logodesktop {
+    display: block;
+}
 
-#logo {
-    display: flex;
+#logomobile {
+    display: none;
 
 }
+
+
 
 .section-one {
     width: 100%;

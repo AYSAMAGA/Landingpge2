@@ -1,0 +1,93 @@
+
+
+
+
+@media (max-width:320px){  
+
+/*Mostrar diferente logo en Mobile */
+
+
+
+#logomobile {
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+#logodesktop {
+    display: none;
+
+}
+
+/*Quitar elementos de mobile */
+
+
+
+.right-header{
+    display: none;
+}    
+
+.divider{
+    display: none
+}
+
+.socialmedia{
+    display: none ;
+}
+
+
+
+
+.menu{
+    display: block;
+
+}
+
+/*Buscador en el centro*/
+.search-container {
+    width: 380px;
+    height: 60px;
+    border: 1px solid white;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    padding: 100px,50px;
+    margin: 100px;   
+}
+
+/*Texto del header centrado en toda la pantalla*/
+
+
+.section-one-container{
+
+}
+
+.section-one-titulo{
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+#subtitle{
+width: 380px;
+height: 41px;
+}
+
+#title{
+width: 380px;
+height: 63px;
+}
+
+
+#button-section-one {
+width: 428px;
+height: 926px;
+}
+
+}
+
+
+
+
