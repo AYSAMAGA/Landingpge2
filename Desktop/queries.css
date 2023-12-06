@@ -1,30 +1,19 @@
 
-/*  Header & Seccion one*/
-
-@media only screen and (max-width: 767px) {
-    .logo-desktop {
-        display: none;
-    }
-    .logo-mobile {
-        display: block;
-    }
-}
+/*-----------Header & Seccion one-----------------------------------------------------------------------*/
 /*  Vamos a mostrar un logo diferente en mobile */
 
-.logo-desktop,
-.logo-mobile {
-    width: 100%; /* Ajusta el ancho según tus necesidades */
+@media only screen and (min-width: 768px) {
+    .logo-desktop {
+        display: block;
+    }
+    .logo-mobile {
+        display: none;
+    }
+    .logo-desktop {
+    width: 100%; 
     max-width: 100%;
     height: auto;   }
-
-@media only screen and (min-width: 768px) {
-        .logo-desktop {
-            display: block;
-        }
-        .logo-mobile {
-            display: none;
-        }
-    }
+}
 
 @media only screen and (max-width: 767px) {
         .logo-desktop {
@@ -36,7 +25,7 @@
     }
 
 
-/*  La cabecera se elimina y solo queda en ícono de menú*/
+/*  La cabecera , el header y social media se elimina y solo queda en ícono de menú*/
 
 @media only screen and (max-width: 767px) {
     #cabecera {
@@ -45,45 +34,186 @@
     .menu-icon {
         display: block; /* Muestra el ícono de menú en dispositivos móviles */
     }
-   
+    .right-header{
+        display: none; /* Se elimino el header que acompaña a toda la pantalla */
+    }
+    .socialmedia{
+        display: none; /* Se eliminaron las rs de lado izquierdo */
+    }
+
 }
 
-/*  El search container se centra en la mmitad de la pantalla mobile*/
+/*  El search container se centra en la mitad de la pantalla mobile*/
+
+/* Centrar en pantalla mobile */
+@media only screen and (max-width: 768px) {
+    .class="search-container" {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    display: block;
+    }
+}
 
 /*  El títlo, subtitulo y properties buttons se centran en la mitad de la pantalla mobile  */
 
+
+/* Centrar en pantalla mobile */
+@media only screen and (max-width: 768px) {
+    #subtitle, #title, #button-section-one {
+    text-align: center;
+    margin: 0 auto;
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .section-one-container {
+    flex-direction: column;
+    }
+
+    .search-container {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
 /*  Si estas en mobile se añade tres líneas en la parte inferior  */
 
+@media only screen and (max-width: 768px) {
+    .rectangulosmobile{
+    background: #d9d9d9;
+    width: 1px;
+    height: 20px;
+    margin: 0 auto;
+}
+}
 
-/*  Seccion Sales Home*/
+
+/*----------------  Seccion Sales Home*------------------------------------------------------------/
 
 /*  Worlwide & Properties for sale salen primero y se centran a la izquierda en la pantalla mobile*/
+
+@media only screen and (max-width: 768px) {
+    #real-sale-desc-home,
+    .worldwide-labele,
+    .property-type-label,
+    .buttons-sale-home {
+        order: 1;
+    }
+
+    #sales-home {
+        text-align: center;
+    }
+
+    .grind-content-home {
+        order: 2;
+    }
+
+    .buttons-sale-home {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-prev,
+    .button-next,
+    .button-all-properties {
+        width: 100%;
+    }
+}
 
 
 /*  En mobile , aparece un párrafo alineado a la izquierda */
 
-/*  En mobile , en la parte superior derecha del párrafo nuevo aparece la fecha  next */
+@media only screen and (max-width: 768px) {
+    #property-for-sale::after {
+    content: "In an ultimate jetsetter location or a forever home, our experts have the expertise it takes to knowledgeably advise you at every stage of the property cycle.";
+    display: block;
+    margin: 10px auto;
+    font-size: 16px;
+    text-align: left;
+    color: #000;
+    font-family: Brandon Grotesque;
+    }
+}
+
+/*  En mobile , en la parte superior derecha del párrafo nuevo aparece la fecha  next (solo se sgv)  */
+
+@media only screen and (max-width: 768px) {
+    .button-next {
+    position: relative;
+    top: 10px; 
+    }
+}
 
 /*  View all properties tiene otro estilo y está a lado izquierdo */
 
+@media only screen and (max-width: 768px) {
+    .button-all-properties {
+        border: none; 
+        color:#DF991B; 
+        text-align: center; 
+        width: 100%; 
+        margin-top: 10px; 
+    }
+}
+
 /*  Solo se muestran dos fotos*/
 
+@media only screen and (max-width: 768px) {
+    .container-one,
+    .container-two {
+    margin-bottom: 10px; 
+    }
+}
 
-/*  Seccion Rent Home*/
+/* --------------------- Seccion Rent Home-------------------------------------------------------------------*/
 
 
 /*  Worlwide & Properties for rent salen primero y se centran a la izquierda en la pantalla mobile*/
 
+
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 768px) {
+    #real-rent-desc-home, {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #rent-home {
+        flex-direction: column; 
+    }
+
+    #real-rent-desc-home,
+    #properties-for-rent-content-home {
+        width: 100%; /* para que me ocupe el ancho disponible */
+        margin: 0 auto; /* para que me centra los elementos */
+    }
+}
+
+
+
 /*  En mobile , en la parte superior derecha del párrafo nuevo aparece la fecha  next */
+/*YA NO LE PUSE PORQUE TIENE LA MISMA CLASE class="button-next" PARA SECTION SALES AND RENT */
+
 
 /*  View all properties tiene otro estilo y está a lado izquierdo */
+/*YA NO LE PUSE PORQUE TIENE LA MISMA CLASE class="button-all-properties" PARA SECTION SALES AND RENT */
+
 
 /*  Solo se muestran dos fotos*/
+/*YA NO LE PUSE PORQUE TIENE LA MISMA CLASE class="container-one y container- two" PARA SECTION SALES AND RENT */
 
 
-/*  Seccion development*/
+/*------------------------------------  Seccion development*-------------------------------------------------/
 
 /*  aparecen 3 fotos diferentes a las de development desktop */
+
+
+
 
 /*  Aparece una mini secttion  name property y location  con un foto 
 
