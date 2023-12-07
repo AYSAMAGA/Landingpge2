@@ -213,16 +213,96 @@
 /*  aparecen 3 fotos diferentes a las de development desktop */
 
 
+@media only screen and (max-width: 767px) {
+    #dev-subtitle, #dev-title {
+      text-align: left; /* Centrar a la izquierda */
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); /* Una columna para dispositivos móviles */
+        gap: 10px; /* Espacio entre las imágenes */
+      }
+    }
+  
 
 
-/*  Aparece una mini secttion  name property y location  con un foto 
+/*  ------------------- Seccion news------------------------------------------------------------------------*/
 
+/*  El logo sale a lado izquierdo y bajo el logo la línea , luego Art Curation & content news */
 
-/*  Seccion news*/
+@media only screen and (max-width: 600px) {
 
-/*  El logo sale a lado izquierdo y bajo el logo la línea*/
+    .news-right {
+        order: 1; /
+        margin-top: 20px; 
+    }
 
-/* Art Curation & content news  salen primero y se centran a la izquierda en la pantalla mobile*/
+    #icononews {
+        order: -1; 
+        margin-bottom: 10px; /
+    }
 
-/*  En mobile , en la parte superior derecha del párrafo nuevo aparece la fecha  next */
+    #icononews::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+        background-color:#DF991B;
+        margin-top: 5px; 
+    }
+
+    /* H3 Subtitulo -news */
+    #services {
+        order: 2; 
+        margin-top: 10px; 
+    }
+
+    /*H2 Subtitulo -news */
+    #arte-curation {
+        order: 3; 
+        margin-top: 10px; 
+    }
+}
+/*---------------------------------------------Footer ----------------------------------------*/
+@media only screen and (max-width: 600px) {
+  
+    #footerSeccion1 {
+        text-align: center; 
+    }
+
+    #miniForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    #nombreForm,
+    #botonregistro {
+        margin-bottom: 10px; 
+    }
+
+    
+    #footerSeccion2 {
+        text-align: center; 
+    }
+
+    .infofooter {
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center; 
+
+    .infofooter span {
+        margin: 5px; 
+    }
+
+    #redSocial {
+        margin-top: 10px; 
+    }
+
+    #redSocial div {
+        margin: 5px; 
+    }
+}
+}
+
 

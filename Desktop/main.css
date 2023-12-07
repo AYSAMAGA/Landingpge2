@@ -725,6 +725,9 @@ header {
         background-color: unset;
     }
 
+    footer{
+        margin-bottom: 2%;
+    }
         #piePagina{
             display: grid;
             grid-template-columns: 1fr;
@@ -794,7 +797,7 @@ header {
         }
         #nombreForm input{
             border-radius: 100px;
-            border: 1px solid #DF991B;
+            border: 1px solid #fff;
             padding-top: 0;
             padding-bottom: 2px;
             font-size: 16px;
@@ -803,36 +806,7 @@ header {
             background-color: transparent !important;
             height: 55px !important;
         }
-        #emailform{
-            padding-bottom: 15px;
-            display: grid;
-            grid-template-columns: auto 1fr;
-            align-items: baseline;
-            column-gap: 15px;
-        }
-        #emailform label{
-            font-size: 14px;
-            font-weight: 400;
-            letter-spacing: 0.1rem;
-            text-transform: uppercase;
-            margin-bottom: 0;
-            color: #fff;
-            font-family: 'brandon-grotesque', sans-serif;
-            line-height: 20px;
-            margin: 0;
-            padding: 0;
-        }
-        #emailform input{
-            border-radius: 100px;
-            border: 1px solid #DF991B;
-            padding-top: 0;
-            padding-bottom: 2px;
-            font-size: 16px;
-            color: #fff;
-            padding-left: 25px;
-            background-color: transparent !important;
-            height: 55px !important;
-        }
+        
         #botonregistro{
             display: flex;
             justify-content: end;
