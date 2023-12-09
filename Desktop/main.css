@@ -18,11 +18,11 @@ header {
 
 } 
 
-#logodesktop {
+#logo-desktop {
     display: block;
 }
 
-#logomobile {
+#logo-mobile{
     display: none;
 
 }
@@ -360,6 +360,10 @@ header {
         border: unset;
         background-color: unset;
     }
+    
+    .buttons-sale-home-mobile{
+        display: none;
+    }
 
 
     .container-one {
@@ -399,7 +403,7 @@ header {
 
 
 #properties-for-rent-content-home {
-    margin-bottom: 2%;
+    margin-bottom: 5%;
 
 }
 
@@ -534,6 +538,10 @@ header {
         border: unset;
         background-color: unset;
     }
+
+    .buttons-rent-home-mobile{
+        display: none;
+    }
     
 
 .development{
@@ -610,13 +618,13 @@ header {
 
 
 #news{
-    
+
     display: flex;
     height: 100vh;
     max-width: 1200px;
     width: 100%;
     justify-content: center;
-    margin: 0 5% 8% 5%;
+    
 
 
 }
@@ -725,9 +733,9 @@ header {
         background-color: unset;
     }
 
-    footer{
-        margin-bottom: 2%;
-    }
+    
+     
+    
         #piePagina{
             display: grid;
             grid-template-columns: 1fr;
