@@ -25,14 +25,12 @@
 
 @media only screen and (max-width: 767px) {
    
-    .menu-icon {
+    .icon-menu{
         display: block; /* Muestra el ícono de menú en dispositivos móviles */
     }
     
-    #inicio,
-    #registro,
-    #spanish,
-    #english,
+    .sesiones,
+    .language,
     .socialmedia{
         display: none;
     }
@@ -58,20 +56,15 @@
 
 @media only screen and (max-width: 768px) {
     .section-one-container {
-    flex-direction: column;
+        display: flex;
+        flex-direction: column;
     }
 
     .search-container {
-        margin-right: 0;
-        margin-bottom: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
+        align-self: flex-end;
+        margin-top:30px
         
-                
-        
-        }
+     }
         
     }
 
@@ -87,6 +80,12 @@
             display: flex;
             justify-content: center;
             margin-bottom: 30px;
+        }
+
+        .container-rec{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
         }
     
         .rectangulosmobile{
@@ -135,9 +134,10 @@
 /*  En mobile , aparece un párrafo alineado a la izquierda */
 
 @media  screen and (max-width: 768px) {
+    
     #property-for-sale::after {
     content: "In an ultimate jetsetter location or a forever home, our experts have the expertise it takes to knowledgeably advise you at every stage of the property cycle.";
-    display: block;
+    display: flex;
     margin: 10px auto;
     font-size: 16px;
     text-align: left;
@@ -183,6 +183,11 @@
 
 @media screen and (max-width: 768px) {
 
+
+    #properties-for-rent-content-home.grind-content-rent-home {
+        flex-direction: column;
+    }
+
     #worldwide-for-rent,
     #property-for-rent,
     #content-p-rent{
@@ -198,12 +203,15 @@
     #rent-home {
         text-align: center;
     }
-
-    .grind-content-rent-home {
-        display: flex;
-        flex-direction: column-reverse !important; 
-    
+    #real-rent-desc-home{
+        order:1
     }
+
+    #gallery-property-for-rent{
+        width: 100vw;
+        order:2
+    }
+
 
 }
 /* Media query para dispositivos móviles */
@@ -272,31 +280,65 @@
 
 /*  El logo sale a lado izquierdo y bajo el logo la línea , luego Art Curation & content news */
 
-@media  screen and (max-widt:767px){
+@media  screen and (max-width:767px){
+
+    #news{
+        margin-bottom: 3%;
+    }
+
     #icononews,
     #liner-right-header-footer,
     #services,
     #arte-curation,
-    #content-news{
+    #content-news,
+    .news-right{
+        display: flex;
+        flex-direction: column;
         text-align: left;
-        width: 100%
+        width: 100%;
+        order: 1;
     }
 
-    .news-left,
+    .news-left, 
     .backbox,
-    .backbox{
-        width: 100%;
-        margin-left: 0;
+    .c{
+        display: flex;
+        flex-direction: column;
+        order:2;
     }
+    .news-left{
+        position: relative;
+        width: 50vh;
+        order: 2;
+        
+    }
+     .c,
+     .backbox{
+        position: absolute;
+        width: 40vh;
+     }
+
+     .c{
+        margin-top: 55%;
+        left: 15%;
+     }
+
+     .backbox{
+        width: 40vh;
+        height: 70vh;
+    }
+
 }
 /*---------------------------------------------Footer ----------------------------------------*/
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width:767px) {
   
     #footerSeccion1 {
+        display: flex;
+        flex-direction: column;
         text-align: center; 
     }
 
-    #miniForm {
+    #miniForm{
         display: flex;
         flex-direction: column;
         align-items: center; 
@@ -312,13 +354,14 @@
         text-align: center; 
     }
 
-    .infofooter {
+    #infofooter {
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap; 
         justify-content: center; 
     }
 
-    .infofooter span {
+    #infofooter span {
         margin: 5px; 
     }
 

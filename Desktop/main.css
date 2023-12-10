@@ -125,7 +125,7 @@ header {
     align-items: center;
     padding: 0 30px;
     align-self: flex-end;
-    margin: 150px;
+    margin-top:150px;
     }
 
     #search-input {
@@ -217,6 +217,13 @@ header {
     font-style: normal
 }
 
+
+.container-rec{
+    display: none;
+}
+
+
+
 #sales-home {
     width: 100%;
     height: 100%;
@@ -236,7 +243,6 @@ header {
         width: 100%;
         height: 100%;
         display: flex;
-        flex-direction: row;
     }
 
     #gallery-property-for-sale {
@@ -411,7 +417,6 @@ header {
         width: 100%;
         height: 100%;
         display: flex;
-        flex-direction: row;
     }
 
 
@@ -628,12 +633,23 @@ header {
 
 
 }
+
+
+
 .news-left{
     position: relative;
     width: 50%;
     
     
 }
+
+.c{
+    position: absolute;
+    width:50vh;
+    margin-top: 15%;
+
+}
+
 
 .backbox{
     width: 40vh;
